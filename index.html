@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+          body {
+            background-image: url('images/site-background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+        </style>
+        <img src="images/logo new.png" alt="Yiling Gaytriarch" width="300" class="center" style="padding:16px">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="commissions.html">Commissions</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="merch.html">Conventions</a>
+                  <a href="zine.html">Zines</a>
+                  <a href="industry.html">Industry</a>
+                </div>
+              </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Webtoons 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="lovemaster.html">Lovemaster Infinity</a>
+                  <a href="stealth.html">Stealth Mode</a>
+                  <a href="scum.html">SVSSS</a>
+                </div>
+              </div> 
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </head>
+    <body>
+            <div class="slideshow-container">
+                <div id="img-gradient">
+                    <div class="mySlides fade">
+                            <a href="https://yilinggaytriarch.bigcartel.com/">
+                                <img src="images/merch.png" style="width:100%; height:450px; object-fit: cover;">
+                            </a>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <a href="https://www.patreon.com/join/yiling_gaytriarch?utm_source=webtoons&utm_medium=link&utm_campaign=yiling_gaytriarch&redirect_uri=http%3A%2F%2Fm.webtoons.com%2Fchallenge%2FpatreonCallback">
+                            <img src="images/patreon.png" style="width:100%; height:450px; object-fit: cover;">
+                        </a>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <a href="commissions.html">
+                            <img src="images/commissions.PNG" style="width:100%; height:450px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+
+            <h1 class="center" style="color:#f1641d; width: 500px; text-align: center;">
+                Important Links!
+            </h1>
+            <div style="display:flex; flex-wrap:wrap;">
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://yilinggaytriarch.bigcartel.com/" target="_blank" class="button">Main Shop</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.etsy.com/shop/YiDoodles?ref=seller-platform-mcnav" target="_blank" class="button">Etsy</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.patreon.com/join/yiling_gaytriarch?utm_source=webtoons&utm_medium=link&utm_campaign=yiling_gaytriarch&redirect_uri=http%3A%2F%2Fm.webtoons.com%2Fchallenge%2FpatreonCallback" target="_blank" class="button">[18+] Patreon</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://discord.com/invite/9aBPcTFmcZ" target="_blank" class="button">Danmei Discord</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://discord.com/invite/9TPtVcgwAw" target="_blank" class="button">OC Discord</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.youtube.com/@yiling_gaytriarch" target="_blank" class="button">Youtube</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.instagram.com/yiling_gaytriarch/" target="_blank" class="button">Insta</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.tiktok.com/@yiling_gaytriarch" target="_blank" class="button">Tiktok</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://x.com/Yi_doodles" target="_blank" class="button">Twitter</a>
+                </div>
+                <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-bottom: 10px;">    
+                    <a href="https://www.webtoons.com/p/community/en/u/YilingGaytriarch" target="_blank" class="button">Webtoon </a>
+                </div>
+            </div>
+            <br>
+            
+                <div class="gallery">
+                    <img src="images/strip.png" alt="Banner" class="center" style="padding:16px;">
+                    <div style="overflow:auto">
+                        <div class="left">
+                          <img src="images/pfp.png" alt="Yi" style="width: 400px; margin-top: 10px;">
+                        </div>
+                      
+                        <div class="right" style="color:#FFFFFF">
+                          <h2>Hey I'm Yi!</h2>
+                          <p> I'm an illustrator, comic artist and animator who likes to make merch! <br><br>
+                              I'm your local Luo Binghe simp, and I'm willing to talk everything danmei with you. I love buying all things danmei so give me merchandise recs! <br><br>
+                              You can find me on youtube, insta, tiktok and twitter(not active there, though). <br><br>
+                              Currently looking for professional work or a PAID internship!<br><br>
+                              I'm also a CS major, I coded this site myself.</p>
+                        </div>
+                    </div>
+                    <img src="images/strip.png" alt="Banner" class="center" style="padding:16px;">
+                </div>
+        </div>
+    </body>
+</html>

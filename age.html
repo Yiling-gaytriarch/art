@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<script>
+    function checkAge() {
+    var age = document.getElementById("age");
+    var adult = document.getElementById("adult");
+    var oldEnough = false;
+    var result = document.getElementById("answer")
+    if (parseInt(age.value, 10) >= 18) {
+        oldEnough = true;
+    } else {
+        oldEnough = false;
+    }
+    if (oldEnough == false) {
+        result.innerHTML = window.location.href="commissions.html";
+    } else {
+        result.innerHTML = window.location.href="nsfw.html";
+    }
+    }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+          body {
+            background-image: url('images/site-background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+        </style>
+        <img src="images/logo new.png" alt="Yiling Gaytriarch" width="300" class="center" style="padding:16px">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="commissions.html">Commissions</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="merch.html">Conventions</a>
+                  <a href="zine.html">Zines</a>
+                  <a href="industry.html">Industry</a>
+                </div>
+              </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Webtoons 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="lovemaster.html">Lovemaster Infinity</a>
+                  <a href="stealth.html">Stealth Mode</a>
+                  <a href="scum.html">SVSSS</a>
+                </div>
+              </div> 
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <img src="images/banner.jpg" alt="Banner" width="100%"">
+    </head>
+    <body>
+        <div class="center">
+            <h1 class="center" style="color:#f1641d; width: 500px; text-align: center;">Enter your age.</h1>
+            <input type="text" id="age" placeholder="enter here" class="center">
+            <div class="center" style="text-align:center; padding-right: 5px; padding-left: 5px; margin-top: 10px;">
+                <input type="button" onclick="checkAge()" value="submit" class="button" style="border: none;">
+            </div>
+            <p id="answer"></p>
+        </div>
+    </body>
+</html>
